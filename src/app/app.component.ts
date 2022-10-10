@@ -7,6 +7,7 @@ import { MusicFestival, Band, RecordLabel, BandInFestivals } from './festival-se
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
   title = 'ea-demo';
   private baseAddress: string = '';
