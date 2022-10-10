@@ -1,0 +1,9 @@
+<div *ngFor="let recordLabel of recordLabels" class="recordlabel">
+  <h3>Record Label: {{recordLabel.name}}</h3>
+  <div *ngFor="let band of recordLabel.bands; let i=index" class="band">
+    <h4>Band: {{band.name}}</h4>
+    <div *ngFor="let festival of band.festivals; let in=index" class="festival">
+      <h5>{{festival}}</h5>
+    </div>
+  </div>
+</div>
